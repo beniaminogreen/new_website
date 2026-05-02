@@ -1,4 +1,3 @@
 base_url = "https://beniamino.org"
 title = "Beniamino's Blog"
 compile_sass = false
-generate_feed = false
