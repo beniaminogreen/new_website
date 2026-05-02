@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Beniamino's Blog
+</h1>
+
+{{ section.content | safe }}
+
+<ul>
+{% for post in section.subsections %}{% endfor %}
+{% set blog = get_section(path="blog/_index.md") %}
+{% for post in blog.pages %}
+  <li>
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+    — {{ post.date | date(format="%Y-%m-%d") }}
+  </li>
+{% endfor %}
+</ul>
+{% endblock content %}
