@@ -1,5 +1,5 @@
 +++
-title = "August 2025 Quantitative Empirical Methods Answers"
+title = "August 2025 Quantitative Empirical Methods Exam Answers"
 date = 2026-05-04
 +++
 
