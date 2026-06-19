@@ -7,7 +7,7 @@ I want to hit at least 40 hours of solid studying / research a week, with a spec
 
 - I want to finish Ronan Veryshanin's [High Dimensional Probability](https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-2.pdf) and the accompanying online lecture series
 - Study [Hansen's Econometrics](https://perhuaman.wordpress.com/wp-content/uploads/2014/06/econometrics-bruce-hansen-2014.pdf) to the point that I can enroll in an intermediate PhD-level Econometrics course in the Fall. 
-- I want to demonstrate genuine expertise on my qualifying exams. With diligent studying, I think that it should be possible to earn a distinction in both (although I don't understand how either are graded). 
+- I want to demonstrate genuine expertise on my qualifying exams. With diligent studying, I think that it should be possible to earn a distinction in both (although I am not committing to this yet). 
 
 I am exercising almost every evening. I want to keep this going, hitting the following goals:
 
