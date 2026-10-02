@@ -1,0 +1,12 @@
+{
+  "days": 30,
+  "start_hour": 0,
+  "end_hour": 24,
+  "text_start_hour": 9,
+  "text_end_hour": 17,
+  "output": "static/availability/index.html",
+  "calendars": [
+    {"name": "Professional",     "color": "#000080", "source": "env:WORK_ICS"},
+    {"name": "Personal", "color": "#006400", "source": "env:PERSONAL_ICS"},
+  ]
+}

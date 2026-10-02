@@ -1,4 +1,8 @@
-on: push
+on:
+  push:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -6,6 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r availability/requirements.txt
+      # If this fails (bad link, Outlook down) the site still deploys without the page.
+      - run: python availability/generate.py availability/calendars.json
+        continue-on-error: true
+        env:
+          WORK_ICS: ${{ secrets.WORK_ICS }}
+          PERSONAL_ICS: ${{ secrets.PERSONAL_ICS }}
       - uses: shalzz/zola-deploy-action@v0.19.2
         env:
           PAGES_BRANCH: gh-pages
