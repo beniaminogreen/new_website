@@ -126,7 +126,7 @@ td{{width:10px;height:10px;background:#e4e4e4;padding:0}}
 {css_colors}
 </style></head><body>
 <h1>Beniamino's Availability:</h1>
-<p>All times Eastern. Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
+<p>All times Eastern. Last updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <div class="s"><table><thead><tr>{head}</tr></thead><tbody>
 {chr(10).join(rows)}
 </tbody></table></div>
