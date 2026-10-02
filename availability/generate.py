@@ -125,7 +125,7 @@ td{{width:10px;height:10px;background:#e4e4e4;padding:0}}
 {chr(10).join(rows)}
 </tbody></table></div>
 <p><span class="k" style="margin-left:0;background:#e4e4e4"></span> free {legend}</p>
-<h3> Business Hours Availability (for copying):</h3>
+<h3> Business Hours Availability (for copying): </h3>
 <ul>
 {chr(10).join(items)}
 </ul>
