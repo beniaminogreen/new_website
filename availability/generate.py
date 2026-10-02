@@ -107,7 +107,7 @@ def main():
     page = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Availability</title>
+<title>Beniamino's Availability</title>
 <link rel="stylesheet" href="{cfg.get('stylesheet', '/style.css')}">
 <style>
 .s{{overflow-x:auto}}
@@ -120,15 +120,15 @@ td{{width:10px;height:10px;background:#e4e4e4;padding:0}}
 {css_colors}
 </style></head><body>
 <h1>Availability</h1>
-<p>Eastern time. Colored is busy.</p>
+<p>All times EST Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <div class="s"><table><thead><tr>{head}</tr></thead><tbody>
 {chr(10).join(rows)}
 </tbody></table></div>
 <p><span class="k" style="margin-left:0;background:#e4e4e4"></span> free {legend}</p>
+<h2>As a list (for copying)</h2>
 <ul>
 {chr(10).join(items)}
 </ul>
-<p>Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <p><a href="/">Home</a></p>
 </body></html>
 """
