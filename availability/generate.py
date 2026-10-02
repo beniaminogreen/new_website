@@ -75,10 +75,14 @@ def main():
     rows = []
     for d in range(days):
         day = today + timedelta(days=d)
-        cells = "".join(
-            f'<td class="c{grid[d][i]}"></td>' if grid[d][i] is not None else "<td></td>"
-            for i in range(nslots)
-        )
+        cells = ""
+        for i in range(nslots):
+            m = h0 * 60 + SLOT * i
+            rng = f"{m // 60:02d}:{m % 60:02d}\u2013{(m + SLOT) // 60:02d}:{(m + SLOT) % 60:02d}"
+            g = grid[d][i]
+            label = f"{day.strftime('%a %b %d')} {rng}: " + ("Free" if g is None else cals[g]["name"])
+            cls = "" if g is None else f' class="c{g}"'
+            cells += f'<td{cls} title="{html.escape(label)}"></td>'
         rows.append(f"<tr><th>{day.strftime('%a %b %d')}</th>{cells}</tr>")
 
     # text list: free ranges inside the working window, weekdays only
@@ -114,13 +118,15 @@ def main():
 table{{border-collapse:separate;border-spacing:1px;margin:1em 0}}
 th{{font-weight:normal;text-align:left;padding:0 6px 0 0;white-space:nowrap}}
 thead th{{font-size:10px;padding:0}}
+thead th:nth-child(6n+2){{font-weight:bold}}
+td:nth-child(12n+2){{box-shadow:-1px 0 0 #777}}
 td{{width:10px;height:10px;background:#e4e4e4;padding:0}}
 .k{{display:inline-block;width:10px;height:10px;vertical-align:middle;margin-left:1em}}
 .k:first-child{{margin-left:0}}
 {css_colors}
 </style></head><body>
 <h1>Beniamino's Availability:</h1>
-<p>All times EST. Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
+<p>All times Eastern. Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <div class="s"><table><thead><tr>{head}</tr></thead><tbody>
 {chr(10).join(rows)}
 </tbody></table></div>
