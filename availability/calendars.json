@@ -6,7 +6,7 @@
   "text_end_hour": 17,
   "output": "static/availability/index.html",
   "calendars": [
-    {"name": "Busy With Professional Stuff",     "color": "##7E22CE", "source": "env:WORK_ICS"},
+    {"name": "Busy With Professional Stuff",     "color": "#7E22CE", "source": "env:WORK_ICS"},
     {"name": "Busy With Personal Stuff", "color": "#2E1065", "source": "env:PERSONAL_ICS"}
   ]
 }
