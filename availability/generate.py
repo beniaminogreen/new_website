@@ -119,13 +119,13 @@ td{{width:10px;height:10px;background:#e4e4e4;padding:0}}
 .k:first-child{{margin-left:0}}
 {css_colors}
 </style></head><body>
-<h1>Availability</h1>
-<p>All times EST Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
+<h1>Beniamino's Availability:</h1>
+<p>All times EST. Updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <div class="s"><table><thead><tr>{head}</tr></thead><tbody>
 {chr(10).join(rows)}
 </tbody></table></div>
 <p><span class="k" style="margin-left:0;background:#e4e4e4"></span> free {legend}</p>
-<h2>As a list (for copying)</h2>
+<h3> Business Hours Availability (for copying):</h3>
 <ul>
 {chr(10).join(items)}
 </ul>
