@@ -111,7 +111,7 @@ def main():
     page = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beniamino's Availability</title>
+<title>Ben to Meet</title>
 <link rel="stylesheet" href="{cfg.get('stylesheet', '/style.css')}">
 <style>
 .s{{overflow-x:auto}}
@@ -125,7 +125,7 @@ td{{width:10px;height:10px;background:#e4e4e4;padding:0}}
 .k:first-child{{margin-left:0}}
 {css_colors}
 </style></head><body>
-<h1>Beniamino's Availability:</h1>
+<h1>Ben to Meet:</h1>
 <p>All times Eastern. Last updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <div class="s"><table><thead><tr>{head}</tr></thead><tbody>
 {chr(10).join(rows)}
