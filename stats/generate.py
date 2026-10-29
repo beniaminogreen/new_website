@@ -133,6 +133,7 @@ def blocks(values, block_minutes, count):
 
 
 def render(cfg, payload, today, demo=False):
+    now = datetime.now(ZoneInfo(cfg["timezone"]))
     days = window(cfg, today)
     esc = html.escape
     activities = [a for a in cfg["activities"] if a["include"]]
@@ -179,6 +180,7 @@ def render(cfg, payload, today, demo=False):
 </head><body>
 <main class="time-stats" id="time-stats">
 <h1>{title}</h1>
+<p>All times Eastern. Last updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 <p class="period">{esc(period)}</p>
 {legend}
 {content}
