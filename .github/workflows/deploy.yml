@@ -20,6 +20,15 @@ jobs:
         env:
           WORK_ICS: ${{ secrets.WORK_ICS }}
           PERSONAL_ICS: ${{ secrets.PERSONAL_ICS }}
+      - name: Generate time stats
+        env:
+          TIMETRACKER_KEY: ${{ secrets.TIMETRACKER_KEY }}
+        run: |
+          if [ -n "$TIMETRACKER_KEY" ]; then
+            python stats/generate.py stats/config.json --fetch
+          else
+            python stats/generate.py stats/config.json
+          fi
       - uses: shalzz/zola-deploy-action@v0.19.2
         env:
           PAGES_BRANCH: gh-pages

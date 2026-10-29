@@ -1,1 +1,6 @@
 static/availability/
+
+static/stats/
+stats/daily-totals.json
+stats/preview.html
+stats/__pycache__/

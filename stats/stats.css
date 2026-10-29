@@ -1,0 +1,15 @@
+/* Base typography and page width come from /style.css, as on /availability/. */
+.time-stats .s { overflow-x: auto; }
+.time-stats table { border-collapse: separate; border-spacing: 1px; margin: 1em 0; }
+.time-stats th { font-weight: normal; text-align: left; padding: 0 6px 0 0; white-space: nowrap; }
+.time-stats thead th { font-size: 10px; padding: 0; }
+.time-stats thead th:nth-child(6n+2) { font-weight: bold; }
+.time-stats td:nth-child(12n+2) { box-shadow: -1px 0 0 #777; }
+.time-stats td { width: 10px; height: 10px; background: #e4e4e4; padding: 0; }
+.time-stats .block { position: relative; }
+.time-stats .fill { position: absolute; top: 0; bottom: 0; display: block; }
+.time-stats .k { display: inline-block; width: 10px; height: 10px; vertical-align: middle; margin-left: 1em; }
+.time-stats .k:first-child { margin-left: 0; }
+@media print {
+  .time-stats .block, .time-stats .fill, .time-stats .k { print-color-adjust: exact; }
+}
