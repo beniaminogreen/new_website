@@ -8,18 +8,13 @@
   "data_file": "stats/daily-totals.json",
   "output": "static/stats/index.html",
   "activities": [
-    { "name": "Deep Work",    "include": true,  "color": "#43815c" },
-    { "name": "Shallow work", "include": true,  "color": "#5c83b8" },
-    { "name": "Reading",      "include": true,  "color": "#c39b4b" },
-    { "name": "Meetings",      "include": true, "color": "#9169a7" },
-    { "name": "Admin Tasks",   "include": false, "color": "#78949a" },
-    { "name": "Exercise",      "include": true, "color": "#ba7060" },
-    { "name": "Sleep",         "include": true, "color": "#677aa3" },
-    { "name": "Cooking",       "include": false, "color": "#b88c59" },
-    { "name": "Family Time",   "include": false, "color": "#a67487" },
-    { "name": "Socializing",   "include": true, "color": "#b98572" },
-    { "name": "Hobbies",       "include": true, "color": "#7f9d62" },
-    { "name": "Household",     "include": false, "color": "#949276" },
-    { "name": "Entertainment", "include": false, "color": "#99869d" }
+    { "name": "Deep Work",    "include": true,  "color": "#009e73" },
+    { "name": "Shallow work", "include": true,  "color": "#0072b2" },
+    { "name": "Reading",      "include": true,  "color": "#e69f00" },
+    { "name": "Meetings",     "include": true,  "color": "#cc79a7" },
+    { "name": "Exercise",     "include": true,  "color": "#d55e00" },
+    { "name": "Sleep",        "include": true,  "color": "#2b2f6b" },
+    { "name": "Socializing",  "include": true,  "color": "#f0e442" },
+    { "name": "Hobbies",      "include": true,  "color": "#56b4e9" },
   ]
 }
