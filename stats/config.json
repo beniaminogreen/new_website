@@ -15,6 +15,6 @@
     { "name": "Exercise",     "include": true,  "color": "#d55e00" },
     { "name": "Sleep",        "include": true,  "color": "#2b2f6b" },
     { "name": "Socializing",  "include": true,  "color": "#f0e442" },
-    { "name": "Hobbies",      "include": true,  "color": "#56b4e9" },
+    { "name": "Hobbies",      "include": true,  "color": "#56b4e9" }
   ]
 }
