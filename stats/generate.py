@@ -180,9 +180,7 @@ def render(cfg, payload, today, demo=False):
 </head><body>
 <main class="time-stats" id="time-stats">
 <h1>{title}</h1>
-<p>"What have You been up to lately?" Let me show you</p>
-<p>All times Eastern. Last updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
-<p class="period">{esc(period)}</p>
+<p>"What have You been up to lately?" Let me show you. All times Eastern. Last updated {now.strftime('%Y-%m-%d %H:%M')}.</p>
 {legend}
 {content}
 </main>
